@@ -3,7 +3,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Hotel {
 
     private String name;
-    private ConcurrentHashMap<Integer, RoomBooking> roomToAvailMap;
+    private ConcurrentHashMap<Integer,RoomBooking> roomToAvailMap;
 
     public String getName() {
         return name;
@@ -13,11 +13,11 @@ public class Hotel {
         this.name = name;
     }
 
-    public ConcurrentHashMap<Integer, RoomBooking> getRoomToAvailMap() {
+    public ConcurrentHashMap<Integer,RoomBooking> getRoomToAvailMap() {
         return this.roomToAvailMap;
     }
 
-    public void setRoomToAvailMap(ConcurrentHashMap<Integer, RoomBooking> roomToAvailMap) {
+    public void setRoomToAvailMap(ConcurrentHashMap<Integer,RoomBooking> roomToAvailMap) {
         this.roomToAvailMap = roomToAvailMap;
     }
 }

@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class BookingManagerImplTest {
 
     @Test
-    public void isRoomAvailableTrue(){
+    public void isRoomAvailableTrue() {
         Hotel hotel = new Hotel();
 
         ConcurrentHashMap<Integer,RoomBooking> roomToAvailMap = new ConcurrentHashMap<>();
@@ -30,7 +30,7 @@ public class BookingManagerImplTest {
     }
 
     @Test
-    public void isRoomAvailableThrowException(){
+    public void isRoomAvailableThrowException() {
         Hotel hotel = new Hotel();
 
         ConcurrentHashMap<Integer,RoomBooking> roomToAvailMap = new ConcurrentHashMap<>();
@@ -50,7 +50,7 @@ public class BookingManagerImplTest {
     }
 
     @Test
-    public void getAvailableRoomsTest(){
+    public void getAvailableRoomsTest() {
         Hotel hotel = new Hotel();
 
         ConcurrentHashMap<Integer,RoomBooking> roomToAvailMap = new ConcurrentHashMap<>();
@@ -77,7 +77,7 @@ public class BookingManagerImplTest {
 
 
     @Test
-    public void isRoomAvailableFalse(){
+    public void isRoomAvailableFalse() {
         Hotel hotel = new Hotel();
 
         ConcurrentHashMap<Integer,RoomBooking> roomToAvailMap = new ConcurrentHashMap<>();
