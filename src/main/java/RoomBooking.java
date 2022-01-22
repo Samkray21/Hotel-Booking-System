@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class RoomBooking {
     private int room;
     private Set<LocalDate> datesBooked;
-    private ConcurrentHashMap<String, Set<LocalDate>> nameToDatesBookedMap;
+    private ConcurrentHashMap<String,Set<LocalDate>> nameToDatesBookedMap;
 
     public int getRoom() {
         return room;
@@ -27,7 +27,7 @@ public class RoomBooking {
         return nameToDatesBookedMap;
     }
 
-    public void setNameToDatesBookedMap(ConcurrentHashMap<String, Set<LocalDate>> nameToDatesBookedMap) {
+    public void setNameToDatesBookedMap(ConcurrentHashMap<String,Set<LocalDate>> nameToDatesBookedMap) {
         this.nameToDatesBookedMap = nameToDatesBookedMap;
     }
 }
